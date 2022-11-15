@@ -4271,12 +4271,15 @@
     const hotVacancyBtn = document.querySelector(".work-page__button");
     registerForm.addEventListener("click", (() => {
         flsModules.fullpage.switchingSection(7);
+        document.documentElement.classList.remove("menu-open");
     }));
     benefits.addEventListener("click", (() => {
         flsModules.fullpage.switchingSection(2);
+        document.documentElement.classList.remove("menu-open");
     }));
     hotVacancy.addEventListener("click", (() => {
         flsModules.fullpage.switchingSection(4);
+        document.documentElement.classList.remove("menu-open");
     }));
     hotVacancyBtn.addEventListener("click", (() => {
         flsModules.fullpage.switchingSection(4);
