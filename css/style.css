@@ -481,17 +481,17 @@ body::after {
 
 .fp-init .slider-mode [data-fp-section],
 .fp-init .cards-mode [data-fp-section] {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
-  transition: -webkit-transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
-  -o-transition: transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
-  transition: transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
-  transition: transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s, -webkit-transform 0.7s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+  transition: -webkit-transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+  -o-transition: transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+  transition: transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+  transition: transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s, -webkit-transform 1s cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
 }
 
 .fp-init .fade-mode [data-fp-section] {
-  -webkit-transition: opacity 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
-  -o-transition: opacity 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
-  transition: opacity 0.5s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
+  -webkit-transition: opacity 0.7s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
+  -o-transition: opacity 0.7s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
+  transition: opacity 0.7s ease-in-out 0s, visibility 0.5s ease-in-out 0s;
 }
 
 .fp-bullets {
@@ -709,7 +709,7 @@ input[type=number]:focus {
 
 .main-block {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
 }
 
 .main-block__container {
@@ -864,7 +864,7 @@ input[type=number]:focus {
 
 .work-page {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
 }
 
 .work-page__container {
@@ -964,7 +964,7 @@ input[type=number]:focus {
 
 .benefits-page {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
   background-color: #fff;
 }
 
@@ -1113,7 +1113,7 @@ input[type=number]:focus {
 
 .saying-page {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
 }
 
 .saying-page__container {
@@ -1237,7 +1237,7 @@ input[type=number]:focus {
 
 .hot-vacancy {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
   background-color: #fff;
 }
 
@@ -1362,7 +1362,7 @@ input[type=number]:focus {
 
 .advantages-page {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
 }
 
 .advantages-page__container {
@@ -1505,7 +1505,7 @@ input[type=number]:focus {
 
 .job-page {
   padding-top: 7.5rem;
-  padding-bottom: 1.875rem;
+  padding-bottom: 3.75rem;
   background-color: #fff;
 }
 
@@ -1604,6 +1604,8 @@ input[type=number]:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  padding-top: 7.5rem;
+  padding-bottom: 3.75rem;
 }
 
 .form-page {
@@ -1847,14 +1849,6 @@ input[type=number]:focus {
     margin-bottom: 3.75rem;
   }
 
-  .form-page {
-    padding-top: 8.125rem;
-  }
-
-  .form-page {
-    padding-bottom: 4.375rem;
-  }
-
   .form-page__content {
     padding: 2.5rem;
   }
@@ -1911,14 +1905,6 @@ input[type=number]:focus {
 
   .hot-vacancy__title:not(:last-child) {
     margin-bottom: 2.1875rem;
-  }
-
-  .form-page {
-    padding-top: 6.875rem;
-  }
-
-  .form-page {
-    padding-bottom: 1.875rem;
   }
 
   .form-page__content {
@@ -2354,30 +2340,6 @@ input[type=number]:focus {
 @supports not (margin-bottom: clamp( 2.1875rem , 1.5992647059rem  +  2.9411764706vw , 3.75rem )) {
     .hot-vacancy__title:not(:last-child) {
       margin-bottom: calc(2.1875rem + 1.5625 * (100vw - 20rem) / 53.125);
-    }
-}
-
-@supports (padding-top: clamp( 6.875rem , 6.4044117647rem  +  2.3529411765vw , 8.125rem )) {
-    .form-page {
-      padding-top: clamp( 6.875rem , 6.4044117647rem  +  2.3529411765vw , 8.125rem );
-    }
-}
-
-@supports not (padding-top: clamp( 6.875rem , 6.4044117647rem  +  2.3529411765vw , 8.125rem )) {
-    .form-page {
-      padding-top: calc(6.875rem + 1.25 * (100vw - 20rem) / 53.125);
-    }
-}
-
-@supports (padding-bottom: clamp( 1.875rem , 0.9338235294rem  +  4.7058823529vw , 4.375rem )) {
-    .form-page {
-      padding-bottom: clamp( 1.875rem , 0.9338235294rem  +  4.7058823529vw , 4.375rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.875rem , 0.9338235294rem  +  4.7058823529vw , 4.375rem )) {
-    .form-page {
-      padding-bottom: calc(1.875rem + 2.5 * (100vw - 20rem) / 53.125);
     }
 }
 
